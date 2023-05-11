@@ -1,4 +1,6 @@
-﻿
+#snippets covering all of this to use this file for other use
+#hearstring
+@script = @'
 [validateset("a","b","c")][String]$x = 'a'
 
 $i ="powershell"
@@ -11,4 +13,5 @@ $p = Get-Process lsass
 
 "Process id = $($p.id)"
 #$p is mainly the system.diagnostics.process
+'@
 
