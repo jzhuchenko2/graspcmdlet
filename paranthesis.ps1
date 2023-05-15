@@ -20,3 +20,6 @@ $services[-1].Name
 "ComputerName,IPAddress" | Out-file c:\Computers.csv
 "DC,192.168.3.10" | Out-file c:\computers.csv -Append
 "Client,192.168.3.100" | Out-File c:\Computers.csv -Append
+
+#Getting names from a txt file 
+Get-Service -name bits -ComputerName (Get-Content c:\computers.txt)
