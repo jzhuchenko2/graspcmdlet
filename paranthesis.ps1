@@ -17,3 +17,6 @@ $services[-1].Name
 #paranthesis!!!!
 #create a txt & file
 'DC','Client' | Out-file c:\computers.txt
+"ComputerName,IPAddress" | Out-file c:\Computers.csv
+"DC,192.168.3.10" | Out-file c:\computers.csv -Append
+"Client,192.168.3.100" | Out-File c:\Computers.csv -Append
